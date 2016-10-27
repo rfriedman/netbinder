@@ -22,6 +22,8 @@ h6, .h6 {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: normal;
   color: #333;
+
+  background-color: 38397f;
 }
 
 
@@ -143,10 +145,11 @@ h6, .h6 {
 .blog-post-title {
   margin-bottom: .25rem;
   font-size: 2.5rem;
+
 }
 .blog-post-meta {
   margin-bottom: 1.25rem;
-  color: #999;
+  color: #38397f;
 }
 
 
