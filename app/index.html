@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="testApp">
+<html lang="en" ng-app="blogApp">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -29,10 +29,10 @@
     <script src="bower_components/angular/angular.js"></script>
     <script src="bower_components/angular-animate/angular-animate.js"></script>
 
-        <script src="js/test.js"></script>
+        <script src="js/blogapp.js"></script>
 
     <!--Angular -->
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+    <script src="https://ajax.googlapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script> -->
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
     <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
@@ -101,10 +101,9 @@
     <div class="container">
 
         
-          <div class="blog-post" ng-controller="testController as list">
-            <h2 class="blog-post-title">NetBinder</h2>
+          <div class="blog-post" ng-controller="getBlogController">
+            <h2 class="blog-post-title">{{blog.title}}</h2>
             <p class="blog-post-meta">December 14, 2013 by <a href="#">Chris</a></p>
-            <p ng-repeat="stat in list.message" class="blog-post-meta">{{stat.text}} <a href="#">Chris</a></p>
 
             <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
             <ul>

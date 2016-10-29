@@ -1,19 +1,19 @@
-angular.module('bodyApp', [])
+'use strict';
+angular.module('blogApp', [])
 
-
-  .controller('alphaController', function() {
-    var bodyText = this;
-    bodyText.body = [
-      {text:'I come from angular'},
-      {text:'my controller is testController'}];
-    };
-
-    bodyText.raw = function(){
-
-		return bodyText.body;    	
-    }
-
+  .controller('getBlogController',['$scope', function('$scope') {
     
-    );
+    $scope.blog = 
+      {id: 1,
+      title:'blogText.blog.title', 
+      meta:'blogText.blog.meta', 
+      author:'blogText.blog.author', 
+      body:'blogText.blog.body'};
+    
 
+
+
+
+
+  }]);
 
