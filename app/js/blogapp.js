@@ -1,19 +1,15 @@
-'use strict';
 angular.module('blogApp', [])
 
-  .controller('getBlogController',['$scope', function('$scope') {
+
+  .controller('blogController',['$scope', function($scope) {
+    $scope.blogPost = {
+      title: 'blogPost.title',
+      meta:'blogPost.meta',
+      author: 'blogPost.author',
+      body: 'blogPost.body'
+    };
     
-    $scope.blog = 
-      {id: 1,
-      title:'blogText.blog.title', 
-      meta:'blogText.blog.meta', 
-      author:'blogText.blog.author', 
-      body:'blogText.blog.body'};
     
-
-
-
-
-
   }]);
+
 
