@@ -28,6 +28,11 @@
     <!--Angular -->
     <script src="bower_components/angular/angular.js"></script>
     <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <!-- Angular ui-router -->
+      <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+      <!-- Application scripts -->
+      <script src="js/services.js"></script>
+      <script src="js/controllers.js"></script>
 
         <script src="js/blogapp.js"></script>
 
@@ -62,12 +67,12 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
+        <li class="active"><a ui-sref="home">Home <span class="sr-only">(current)</span></a></li>
         <li><a href="#">Resources</a></li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Projects <span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="#">Select project</a></li>
+            <li><a href="text-box.html">Select project</a></li>
             <li><a href="#">Create Project</a></li>
             
           </ul>
@@ -89,35 +94,84 @@
 
 </div>
 
-    <div class="blog-header">
-      <div class="container">
-
-        <h1 class="blog-title">NetBinder </h1>
-        <p class="lead blog-description">Create, record and share your ideas, experiments and inventions.</p>
-      </div>
-    </div>
+<div class="container">
 
 
-    <div class="container">
-
+<div class = "container" ng-controller = "mainSiteController">
+  <div class = "row">
+      
+      <div class="jumbotron" >
         
-          <div class="blog-post" ng-controller="blogController">
-            <h2 class="blog-post-title">{{blogPost.title}}</h2>
-            <p class="blog-post-meta">{{blogPost.meta+' '}} <a href="#">{{blogPost.author}}</a></p>
+           <h1 class="blog-title"><span class="glyphicon glyphicon-knight" aria-hidden="true">
+            {{info.sitename}}</span>
+           </h1>
+          </div>
+        <h2 class="lead blog-description"><a ui-sref="article">{{info.siteheading}}</a></h2>
+        <p>{{info.sitedescription}}</p>
 
-            <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-            <ul>
-              <li>Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</li>
-              <li>Donec id elit non mi porta gravida at eget metus.</li>
-              <li>Nulla vitae elit libero, a pharetra augue.</li>
+    </div> 
+
+ 
+</div><!-- /container -->
+
+
+      <div class="row" >
+      <div class="col-sm-8 blog-main" >  
+    <div ui-view></div>
+
+          <nav>
+            <ul class="pager">
+              <li><a href="#">Previous</a></li>
+              <li><a href="#">Next</a></li>
             </ul>
-            <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
-            <p>Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue.</p>
-          </div><!-- /.blog-post -->
+          </nav>
 
+        </div><!-- /.blog-main -->
+
+        <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
+          <div class="sidebar-module sidebar-module-inset">
+            <h4>About</h4>
+            <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
+          </div>
+          <div class="sidebar-module">
+            <h4>Archives</h4>
+            <ol class="list-unstyled">
+              <li><a href="#">March 2014</a></li>
+              <li><a href="#">February 2014</a></li>
+              <li><a href="#">January 2014</a></li>
+              <li><a href="#">December 2013</a></li>
+              <li><a href="#">November 2013</a></li>
+              <li><a href="#">October 2013</a></li>
+              <li><a href="#">September 2013</a></li>
+              <li><a href="#">August 2013</a></li>
+              <li><a href="#">July 2013</a></li>
+              <li><a href="#">June 2013</a></li>
+              <li><a href="#">May 2013</a></li>
+              <li><a href="#">April 2013</a></li>
+            </ol>
+          </div>
+          <div class="sidebar-module">
+            <h4>Elsewhere</h4>
+            <ol class="list-unstyled">
+              <li><a href="#">GitHub</a></li>
+              <li><a href="#">Twitter</a></li>
+              <li><a href="#">Facebook</a></li>
+            </ol>
+          </div>
+        </div><!-- /.blog-sidebar -->
+
+
+
+      </div><!-- /.row -->
 
     </div><!-- /.container -->
 
+    <footer class="blog-footer">
+      <p>Blog template built for <a href="http://getbootstrap.com">Bootstrap</a> by <a href="https://twitter.com/mdo">@mdo</a>.</p>
+      <p>
+        <a href="#">Back to top</a>
+      </p>
+    </footer>
 
     <!-- Bootstrap core JavaScript
     ================================================== -->

@@ -23,7 +23,6 @@ h6, .h6 {
   font-weight: normal;
   color: #333;
 
-  background-color: 38397f;
 }
 
 
@@ -166,4 +165,11 @@ h6, .h6 {
 }
 .blog-footer p:last-child {
   margin-bottom: 0;
+}
+.box{
+  height: 90px;
+  width:200px;
+white-space:normal;
+
+
 }

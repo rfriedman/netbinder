@@ -31,18 +31,14 @@
 <div class = "container" ng-controller = "mainSiteController">
 	<div class = "row">
       
-	<div class="col-md-6" >
       <div class="jumbotron" >
-      
-      		 <h1><span class="glyphicon glyphicon-knight" aria-hidden="true">
-      		 	<small>{{info.sitename}}</small></span>
+        
+      		 <h1 class="blog-title"><span class="glyphicon glyphicon-knight" aria-hidden="true">
+      		 	{{info.sitename}}</span>
       		 </h1>
       		</div>
-      		</div>
-      <div class="col-md-6" >
-        <h2><a ui-sref="article">{{info.siteheading}}</a></h2>
+        <h2 class="lead blog-description"><a ui-sref="article">{{info.siteheading}}</a></h2>
         <p>{{info.sitedescription}}</p>
-    	</div>
 
     </div> 
 
