@@ -12,6 +12,8 @@ modelService.init().then(
 		$scope.article = $scope.data.article();
 		$scope.section = $scope.data.section();
 		$scope.contacts = $scope.data.contacts();
+
+$scope.section_0 = $scope.section[0];
 	
 },function(response){
 	$scope.error = response;

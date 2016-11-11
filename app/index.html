@@ -72,7 +72,7 @@
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Projects <span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="text-box.html">Select project</a></li>
+            <li><a ui-sref="article">Hypothesis</a></li>
             <li><a href="#">Create Project</a></li>
             
           </ul>
@@ -100,16 +100,16 @@
 <div class = "container" ng-controller = "mainSiteController">
   <div class = "row">
       
-      <div class="jumbotron" >
+      
         
            <h1 class="blog-title"><span class="glyphicon glyphicon-knight" aria-hidden="true">
             {{info.sitename}}</span>
            </h1>
           </div>
-        <h2 class="lead blog-description"><a ui-sref="article">{{info.siteheading}}</a></h2>
+        <h2 class="lead blog-description">{{info.siteheading}}</h2>
         <p>{{info.sitedescription}}</p>
 
-    </div> 
+     
 
  
 </div><!-- /container -->

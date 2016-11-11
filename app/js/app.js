@@ -37,6 +37,11 @@ angular.module('uiRouterDemo', [
           templateUrl: 'partials/contacts.html'
         })
 
+        .state('hypothesis', {
+          url: '/hypothesis',
+          templateUrl: 'partials/hypothesis.html'
+        })
+
         .state('article',{
           url: '/article',
           templateUrl:'partials/article.html'

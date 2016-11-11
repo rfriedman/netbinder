@@ -5,36 +5,38 @@
 			{
 				  "contactid":"1",
 				  "firstname":"Richard",
-				  "lastname":"friedman"},
+				  "lastname":"Friedman"},
 				{
 				  "contactid":"2",
-				  "firstname":"Mirela",
-				  "lastname":"friedman"
+				  "firstname":"Allen",
+				  "lastname":"Friedman"
 				}
 			],
 
 			"siteinfo":{
 				"siteid":"1",
-				"sitename":"Netbinder",
-				"siteheading":"Create, share and organize your notes, thoughts and ideas",
+				"sitename":"A Chilling Experiment",
+				"siteheading":"Is ice heavier than water and why does ice float?",
 				"sitedescription":"this is the site description"
 			},
 			
 			"article":{
 				"articleid":"1",
-				"articletitle":"this is an article title",
+				"articletitle":"Is Ice Heavier Than Water",
 				
 				"section":[
 					{
 						"sectionid":"1",
-						"sectionheading":"this is one heading",
-						"sectionbody":"this is body of section"
+						"sectionheading":"Hypothesis",
+						"sectionbody":"I think that ice is heavier than water because solids are heavier than liquids",
+						"meta":"A Chilling Experiment",
+						"author":"Allen Friedman"
 						},
 					{
 						"sectionid":"2",
-						"sectionheading":"this is another heading", 
-						"sectionbody":"this is body of section"
-						}
+						"sectionheading":"Purpose", 
+						"sectionbody":"To determine the weight of water compared to ice"
+					}
 				]
 				
 			}
