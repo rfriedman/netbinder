@@ -8,8 +8,8 @@
 	<section>
 
         
-          <div class="blog-post" ng-repeat="item in section">
-            <h2 class="blog-post-title">{{item.sectionheading}}</h2>
+          <div class="blog-post" ng-repeat="(key, value) in section">
+            <h2 class="blog-post-title">key = {{key}} value = {{value}}</h2>
             <p class="blog-post-meta">{{item.meta}} <a href="#">{{item.author}}</a></p>
             <p>{{item.sectionbody}}</p>
           </div><!-- /.blog-post -->
