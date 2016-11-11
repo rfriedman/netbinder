@@ -14,6 +14,7 @@ modelService.init().then(
 		$scope.contacts = $scope.data.contacts();
 
 $scope.section_0 = $scope.section[0];
+$scope.contactsA = $scope.contacts[0];
 	
 },function(response){
 	$scope.error = response;

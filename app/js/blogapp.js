@@ -48,6 +48,22 @@ angular.module('blogApp', [
           templateUrl:'partials/article.html'
         })
 
+        .state('properties',{
+          url: '/properties',
+          templateUrl:'partials/properties.html'
+        })
+
+        .state('method',{
+          url: '/method',
+          templateUrl:'partials/method.html'
+        })
+
+
+        .state('precision',{
+          url: '/precision',
+          templateUrl:'partials/precision.html'
+        })
+
         var siteConfig = {"siteName":"name of site", "siteID":5084220, "baseUrl":'json/site.json'};
         siteConfigProvider.siteSettings(siteConfig);
 
