@@ -86,6 +86,7 @@ h6, .h6 {
   padding-bottom: .75rem;
   margin-bottom: 1rem;
   border-bottom: .05rem solid #eee;
+  background-color: #4f5e7c;
 }
 .blog-title {
   margin-bottom: 0;
@@ -109,6 +110,11 @@ h6, .h6 {
  */
 
 /* Sidebar modules for boxing content */
+.blog-main{
+  font-size: 18px;
+  line-height: 1.5;
+   background-color: #d0e8dc;
+}
 .sidebar-module {
   padding: 1rem;
   /*margin: 0 -1rem 1rem;*/

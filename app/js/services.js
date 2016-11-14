@@ -194,7 +194,8 @@ service.initData =	function (){
 
 service.putData =function(siteData){
 	var defferd =$q.defer();
-	$http.put(url,siteData).then(
+	var putUrl = "json/test.json"
+	$http.post(putUrl,siteData).then(
 		function(response){
 			console.log(response.statusText);
 			deffered.resolve(response);
@@ -222,6 +223,11 @@ service.putData =function(siteData){
 		return modelInterface.domainModel(value);
 	}
 
+	asyncModel.create = function(value){
+		modelInterface.putData(value);
+	}
+
+	
 	asyncModel.init = function(){
 
 		var deffered = $q.defer();
