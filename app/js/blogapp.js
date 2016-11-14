@@ -63,6 +63,10 @@ angular.module('blogApp', [
           templateUrl:'partials/method.html'
         })
 
+        .state('displacement',{
+          url: '/displacement',
+          templateUrl:'partials/displacement.html'
+        })
 
         .state('precision',{
           url: '/precision',
