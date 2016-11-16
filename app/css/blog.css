@@ -87,8 +87,11 @@ h6, .h6 {
   margin-bottom: 1rem;
   border-bottom: .05rem solid #eee;
   background-color: #4f5e7c;
+  padding: 1.00rem;
+  margin-top: 25px;
 }
 .blog-title {
+
   margin-bottom: 0;
   font-size: 2rem;
   font-weight: normal;
