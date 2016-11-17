@@ -48,6 +48,11 @@ angular.module('blogApp', [
           templateUrl:'partials/article.html'
         })
 
+        .state('experiment',{
+          url: '/experiment',
+          templateUrl:'partials/experiment.html'
+        })
+
         .state('post',{
           url: '/post',
           templateUrl:'partials/post.html'

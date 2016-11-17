@@ -12,48 +12,15 @@ modelService.init().then(
 		$scope.section = $scope.data.section();
 		$scope.contacts = $scope.data.contacts();
 
-$scope.section_0 = $scope.section[0];
+$scope.hypothesis = $scope.section.slice(0,4);
+$scope.experiment = $scope.section.slice(4);
 $scope.contactsA = $scope.contacts[0];
-	newPost($scope.data);
 },function(response){
 	$scope.error = response;
 })
 
-	$scope.newPost = function(value){
-		modelService.create(value).then(
-				function(response){
-		$scope.response = response;
-
-	
-},function(response){
-	$scope.error = response;
-})
-    
-	console.log($scope.error);
-	$scope.testData='';
-
-	}    
 
 }])
 
-.controller('postController',['$scope','modelService',function($scope,modelService){
-
-	$scope.newPost = function(value){
-		modelService.create(value).then(
-				function(response){
-		$scope.response = response;
-
-	
-},function(response){
-	$scope.error = response;
-})
-    
-	console.log($scope.error);
-	$scope.testData='';
-
-	}
-
-
-}])
 
 
