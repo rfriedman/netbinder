@@ -58,8 +58,22 @@
 					{
 						"sectionid":"5",
 						"sectionheading":"Experiment", 
-						"sectionbody":"I filled a graduated cylinder with 50 ml of water and measured the mass it was 69.02 g.  Then we  froze the water for at least 5 hours.  Then we measured the ice volume and mass.the ice was 55ml and 69.01 grams.  Similar results were achieved three times in order to verify experiment.  The experiment was repeated six times the first three experiments were discarded because of bad data.  Each discarded experiment made it difficult to get accurate or precise measurements.",
+						"sectionbody":{"procedure":
+										[
+											"I filled a graduated cylinder with 50 ml of water and measured the mass it was 69.02 g.","Then we  froze the water for at least 5 hours.","Then we measured the ice volume and mass.the ice was 55ml and 69.01 grams.",
+											"Similar results were achieved three times in order to verify experiment.",  
+											"The experiment was repeated six times the first three experiments were discarded because of bad data.",
+											"Each discarded experiment made it difficult to get accurate or precise measurements."
+										]},
 						"meta":"Procedure",
+						"author":"Allen Friedman"
+					},
+
+					{
+						"sectionid":"6",
+						"sectionheading":null, 
+						"sectionbody":{"materials":["1 Graduated Cylinder","Water","Scale"]},
+						"meta":"Materials",
 						"author":"Allen Friedman"
 					}
 

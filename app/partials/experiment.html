@@ -3,12 +3,17 @@
 	  <div><h1>
 	  	<small>{{article.articletitle}}</small></h1>
 	  </div>
-        
-          <div class="blog-post" ng-repeat="item in experiment">
+        <div class="blog-post" ng-repeat="item in experiment">
             <h2 class="blog-post-title">{{item.sectionheading}}</h2>
             <p class="blog-post-meta">{{item.meta}} <a href="#"> {{item.author}}</a></p>
-            <p>{{item.sectionbody}}</p>
-          </div><!-- /.blog-post -->
+            <ul ng-repeat="line in item.sectionbody.procedure">
+            <li >{{line}}</li>
+        </ul>
+        <ul ng-repeat="line in item.sectionbody.materials">
+            <li >{{line}}</li>
+        </ul>
+
+          </div>
 
 
 	 </section>
