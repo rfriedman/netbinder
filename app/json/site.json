@@ -75,7 +75,16 @@
 						"sectionbody":{"materials":["1 Graduated Cylinder","Water","Scale"]},
 						"meta":"Materials",
 						"author":"Allen Friedman"
+					},
+
+										{
+						"sectionid":"7",
+						"sectionheading":"Conclusion", 
+						"sectionbody":"My hypothesis was not correct  because when the 50 ml of water froze it gained 5  ml in volume and maintained the same mass of 69.02g.  Ice is in fact less dense  than water which causes ice to float.",
+						"meta":"Density of ice",
+						"author":"Allen Friedman"
 					}
+
 
 
 				]
@@ -84,3 +93,5 @@
 
 		}
 	}
+
+

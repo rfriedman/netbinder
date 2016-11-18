@@ -13,7 +13,10 @@ modelService.init().then(
 		$scope.contacts = $scope.data.contacts();
 
 $scope.hypothesis = $scope.section.slice(0,4);
-$scope.experiment = $scope.section.slice(4);
+$scope.experiment = $scope.section.slice(3,6);
+$scope.conclusion = $scope.section.slice(6);
+console.log($scope.conclusion);
+console.log($scope.experiment);
 $scope.contactsA = $scope.contacts[0];
 },function(response){
 	$scope.error = response;
