@@ -12,9 +12,9 @@ modelService.init().then(
 		$scope.section = $scope.data.section();
 		$scope.contacts = $scope.data.contacts();
 
-$scope.hypothesis = $scope.section.slice(0,4);
-$scope.experiment = $scope.section.slice(3,7);
-$scope.conclusion = $scope.section.slice(7);
+$scope.hypothesis = $scope.section.slice(0,3);
+$scope.experiment = $scope.section.slice(4,5);
+$scope.conclusion = $scope.section.slice(6);
 console.log($scope.conclusion);
 console.log($scope.experiment);
 $scope.contactsA = $scope.contacts[0];
