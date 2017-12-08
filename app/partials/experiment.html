@@ -7,6 +7,7 @@
         <div class="blog-post" ng-repeat="item in experiment">
             <h2 class="blog-post-title">{{item.sectionheading}}</h2>
             <p class="blog-post-meta">{{item.meta}} <a href="#"> {{item.author}}</a></p>
+            
             <ul ng-repeat="line in item.sectionbody.procedure">
             <li >{{line}}</li>
         </ul>
