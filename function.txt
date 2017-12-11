@@ -1,0 +1,14 @@
+Functions
+    Functions are things that take input and produce a result.  Like when you tell your mom you are hungry
+    and she makes you some pizza rolls.  You are hungry and she provides the function of making something
+    to eat.  Computers are not your mom so they take special instructions.  For example if you
+    want a function that takes two colors and makes another color like green it might look like this:
+    
+    function makeColor from yellow and blue.  Now computer programers are lazy so they made a shorter way
+    to say this for example:
+
+    makeColor("yellow","blue"); 
+
+    start: 0.00 
+    end:  4.05
+
