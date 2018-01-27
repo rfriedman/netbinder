@@ -78,7 +78,7 @@ angular.module('blogApp', [
           templateUrl:'partials/precision.html'
         })
 
-        var siteConfig = {"siteName":"name of site", "siteID":5084220, "baseUrl":'json/site.json'};
+        var siteConfig = {"siteName":"name of site", "siteID":5084220, "baseUrl":'http://192.168.0.6:5000/site'};
         siteConfigProvider.siteSettings(siteConfig);
 
     }
