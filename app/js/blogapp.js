@@ -43,9 +43,9 @@ angular.module('blogApp', [
         })
 
 
-        .state('article',{
-          url: '/article',
-          templateUrl:'partials/article.html'
+        .state('login',{
+          url: '/login',
+          templateUrl:'partials/login.html'
         })
 
         .state('experiment',{
